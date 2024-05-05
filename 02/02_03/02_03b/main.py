@@ -9,3 +9,10 @@ NUM_OF_STUDENTS = len(student_pet_count_list)
 print(NUM_OF_STUDENTS)
 
 # average = sum / number of items
+average = 0
+
+for i in range(len(student_pet_count_list)):
+  average += student_pet_count_list[i]
+
+average /= len(student_pet_count_list)
+print(int(average))
